@@ -1,0 +1,170 @@
+.Testimonials {
+  padding: 1rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .left {
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #5e6282;
+    }
+    h1 {
+      font-family: "Volkhov";
+      font-weight: 700;
+      font-size: 50px;
+      text-transform: capitalize;
+      color: #14183e;
+      width: 60%;
+    }
+  }
+  .right {
+    width: 55%;
+    background: #ffffff;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+      0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+      0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+      0px 20px 13px rgba(0, 0, 0, 0.01),
+      0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+      0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 10px;
+    img {
+      padding: 1rem 2rem;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+    }
+    .content {
+      display: flex;
+      padding: 1rem 2rem;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        color: #5e6282;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+      }
+      h6 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #5e6282;
+        margin-left: 2rem;
+      }
+      span {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        color: #5e6282;
+      }
+    }
+
+    .splide__arrow--next {
+      position: absolute;
+      top: 35%;
+      right: -58px;
+      transform: rotate(271deg);
+    }
+    .splide__arrow--prev {
+      position: absolute;
+      left: 580px;
+      transform: rotate(271deg);
+    }
+    .splide__pagination {
+      position: absolute;
+      left: -300%;
+      .splide__pagination__page {
+        padding: 7px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .right {
+      .splide__arrow--prev {
+        left: 110%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .right {
+    .splide__arrow--prev {
+      left: 110%;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .Testimonials {
+    flex-direction: column;
+    .left {
+      h1 {
+        padding: 1rem 0;
+        width: 100%;
+        font-size: 40px;
+      }
+    }
+    .right {
+      width: 100%;
+      .content {
+        p {
+          font-size: 15px;
+          width: 100%;
+        }
+      }
+      .splide__arrow--prev {
+        position: absolute;
+        left: 108%;
+        transform: rotate(271deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Testimonials {
+    .left {
+      h5 {
+        font-size: 10px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+    }
+    .right {
+      width: 100%;
+      .content {
+        align-self: flex-start;
+        p {
+          line-height: 18px;
+          font-size: 10px;
+          width: 100%;
+        }
+        h6 {
+          font-size: 12px;
+        }
+        span {
+          font-size: 8px;
+        }
+      }
+      .splide__arrow--prev {
+        left: 118%;
+      }
+    }
+  }
+}
